@@ -1,0 +1,21 @@
+{
+  "name": "maktab-talimidagi-muammolar",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion preview",
+    "build": "remotion render src/index.tsx Main --output out/maktab_talimidagi_muammolar.mp4",
+    "generate:sounds": "node scripts/generate-sounds.js",
+    "prepare": "npm run generate:sounds"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remotion": "^3.3.0"
+  },
+  "devDependencies": {
+    "typescript": "5.1.6",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7"
+  }
+}
